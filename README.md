@@ -1,5 +1,5 @@
 # MAX6921 VFD GPS Clock
-See [http://www.george-smart.co.uk/wiki/VFD_Clock](http://www.george-smart.co.uk/wiki/VFD_Clock) for full project information.
+See [http://www.george-smart.co.uk/wiki/VFD_Clock](http://www.george-smart.co.uk/wiki/VFD_Clock) for full project information. PCBs can be ordered from [this link here](http://dirtypcbs.com/store/designer/details/m1geo/783/m1geo-iv-11-vfd-boards).
 
 
 ![IV-11 VFD Tubes and Boards](http://www.george-smart.co.uk/w/images/e/e5/IV-11_VFD_BoardsTubes.jpg)
@@ -19,7 +19,7 @@ The clock has the following basic features
 
 ## Tube Mounting Boards
 ![VFD Board IV-11](http://www.george-smart.co.uk/w/images/5/55/IV-11_VFD_Chip.jpg)
-The IV-11 tubes are mounted on a small PCB [available here in small quantities for cheap](http://dirtypcbs.com/store/designer/details/George+M1GEO/783/m1geo-iv-11-vfd-boards) which also holds the MAX6921 and some of the passive components to make the tubes work. You'll also need a +35V DC supply for the tubes (I used a cheap £1 Chinese boost converter, from 12V DC to 35V DC), a logic supply (3V to 5.5V DC), and a heater supply (I used a +5 DC supply from a 7805, which gets warm. Don't use the Arduino 5V, as the heaters draw too much current, on these tubes, you don't need an AC heater current).
+The IV-11 tubes are mounted on a small PCB [available here in small quantities for cheap](http://dirtypcbs.com/store/designer/details/m1geo/783/m1geo-iv-11-vfd-boards) which also holds the MAX6921 and some of the passive components to make the tubes work. You'll also need a +35V DC supply for the tubes (I used a cheap £1 Chinese boost converter, from 12V DC to 35V DC), a logic supply (3V to 5.5V DC), and a heater supply (I used a +5 DC supply from a 7805, which gets warm. Don't use the Arduino 5V, as the heaters draw too much current, on these tubes, you don't need an AC heater current).
 
 The board will also hold 2 SMT LEDs to underlight the tube. I have used blue LEDs, but any colour will do. There are 3 other components, R1 and R2 are 27 Ohm used to set the heater current (approx 47mA, with 5V DC heater voltage), while R3 and R4 are 10 kOhm used for. D1 and D2 are 1N4148/1N4001 (or almost any other silicon diode which can handle 50mA), and allow the VFD heater to sit slightly above the 0V reference, such that the VFDs are reverse biased with 0V output from the MAX6921, causing the VFDs to be completely blanked (no leakage current) when the segments are turned off (0V).
 
