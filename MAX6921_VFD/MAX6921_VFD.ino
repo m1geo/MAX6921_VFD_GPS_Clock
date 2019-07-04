@@ -15,7 +15,7 @@
 //
 
 #include <dht11.h>
-#include <Time.h>
+#include <TimeLib.h> // Use most recent version of https://github.com/PaulStoffregen/Time
 #include <TinyGPS.h> // can be found at https://github.com/mikalhart/TinyGPS
 
 // GPS Stuff
@@ -400,4 +400,3 @@ void loop() {
     }
   }
 }
-
